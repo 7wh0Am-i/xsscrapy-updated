@@ -70,6 +70,10 @@ FAQ
 * If it gives an error : ```ImportError: cannot import name LinkExtractor```. This means that you don't have the latest version of scrapy. You can install it using: ```sudo pip install --upgrade scrapy```.
 * It's called XSScrapy, so why SQL injection detection too? There is overlap between dangerous XSS chars and dangerous SQL injection characters, namely single and double quotes. Detecting SQL injection errors in a response is also simple and nonCPU-intensive. So although 99% of this script is strongly geared toward high and accurate detection of XSS adding simple SQL injection detection through error message discovery is a simple and effective addition. This script will not test for blind sql injection. Error messages it looks for come straight from w3af's sqli audit plugin.
 
+Credit 
+------
+Developed by https://github.com/DanMcInerney
+
 License
 -------
 
